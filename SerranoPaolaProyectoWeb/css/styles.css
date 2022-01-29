@@ -1,0 +1,177 @@
+*{
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+}
+
+/*para quitar la decoración */
+a, li{
+	text-decoration: none;
+	list-style: none;
+}
+
+/*barra de navegación*/
+.navbar{
+	background-color: #68C5DB;
+	text-decoration: none;
+	padding: 10px;
+}
+
+
+/*Alinear a la derecha los links de la navbar */
+.barra{
+	text-align: right;
+}
+
+/*Botón de la página principal que dirige a proyectos */
+.botprinc{
+	font-family: 'Tajawal', sans-serif;
+	font-size: 30px;
+	color: white;
+	display: inline-block;
+	background-color: #ff5050;
+	border-radius: 5px;
+	padding: 15px;
+	width: auto;
+	text-align: center;
+	vertical-align: middle;
+}
+
+/*Alinear el botón*/
+.boton{
+	display: inline-flex;
+	justify-content: space-between;
+	position: relative;
+	float: center;
+
+}
+
+/*Especificaciones generales para las páginas */
+body{
+	font-family: 'Tajawal', sans-serif;
+    font-size: 1.6rem;
+    background-color:#448FA3;
+    margin:0px;  
+    height:100%;
+    color: white;
+}
+
+/*Imagen pricipal con clip-path*/
+.imge img{
+	max-width: 50vw;
+	margin-left: 5vw;
+	margin-bottom: 5vh;
+	clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+
+}
+.imge{
+	display: inline;
+}
+
+
+/*Especificaciones para todos los encabezados*/
+.titular{
+	font-family: 'Murecho', sans-serif;
+	display: block;
+	padding: 20px;
+	margin-left: 2vw;
+}
+.subtitulo{
+	padding: 20px;
+	margin: 20px;
+	margin-left: 2vw;
+}
+/*Especificaciones para los textos */
+.txt{
+	box-sizing: border-box;
+	padding: 30px;
+	margin: 20px;
+	border: dotted 15px #ff5050;
+	border-radius: 5px;
+	/*position: absolute;*/
+	max-width: 500px;
+	display: inline-block;
+	text-align: justify;
+	margin-left: 5vw;
+	margin-bottom: 5vh;
+	
+}
+
+/*Video*/
+.video{
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 200px;
+	border: solid 15px #ff5050;
+	border-radius: 15px;
+	padding: 0;
+}
+
+/*Detalles de formulario*/
+.formulario{
+	text-decoration: none;
+	display: inline-block;
+	border: dotted 15px #ff5050;
+	padding: 20px;
+	margin: 30px;
+	vertical-align: top;
+}
+
+/*footer*/
+.pie{
+	background-color: #000066;
+	max-height: 30px;
+	font-size: 20px;
+	padding: 10px;
+
+}
+
+/*botón del footer*/
+
+.share img{
+	display: inline;
+	max-width: 20px;
+}
+
+#sh{
+	float: right;
+}
+
+/*Responsividad del diseño a través de mediaqueries
+
+/* Bootstrap: https://getbootstrap.com/docs/5.1/layout/breakpoints/ */
+/*// X-Small devices (portrait phones, less than 576px)*/
+/*// No media query for `xs` since this is the default in Bootstrap*/
+
+/*// Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) { 
+	.navbar li{
+	display: inline;
+	margin: 0;
+	border: solid 1px #ff5050;
+	background-color: #ff5050;
+	border-radius: 5px;
+	padding: 2px;
+	color: white;
+	font-family: 'Tajawal', sans-serif;
+	vertical-align: top;
+}
+
+}
+
+/*// Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) { 
+	/*Lista de links dentro de navbar*/
+.navbar li{
+	display: inline;
+	margin: 0;
+	border: solid 3px #ff5050;
+	background-color: #ff5050;
+	border-radius: 5px;
+	padding: 15px;
+	color: white;
+	font-family: 'Tajawal', sans-serif;
+	vertical-align: top;
+}
+}
+
